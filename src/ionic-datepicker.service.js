@@ -10,7 +10,15 @@
   IonicDatepickerService.$inject = [];
   function IonicDatepickerService(){
     this.monthsList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    this.yearsList = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+
+    var currentYear = new Date().getFullYear();
+    this.yearsList = [];
+    for (var i = 5; i>=0; i--) {
+      this.yearsList.push(currentYear-i);
+    }
+    for (var j = 1; j<=5; j++) {
+      this.yearsList.push(currentYear+j);
+    }
   }
 
 })();

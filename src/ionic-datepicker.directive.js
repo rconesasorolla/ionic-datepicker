@@ -68,7 +68,19 @@
         } else {
           scope.weekNames = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
         }
-        scope.yearsList = IonicDatepickerService.yearsList;
+
+        if (scope.inputObj.yearsBefore && scope.inputObj.yearsAfter){
+          var currentYear = new Date().getFullYear();
+          scope.yearsList = [];
+          for (var i = scope.inputObj.yearsBefore; i>=0; i--) {
+            scope.yearsList.push(currentYear-i);
+          }
+          for (var j = 1; j<=scope.inputObj.yearsAfter; j++) {
+            scope.yearsList.push(currentYear+j);
+          }
+        }else{
+          scope.yearsList = IonicDatepickerService.yearsList;
+        }
 
         //Setting whether to show Monday as the first day of the week or not.
         if (scope.inputObj.mondayFirst) {

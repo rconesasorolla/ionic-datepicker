@@ -17,7 +17,7 @@ This is an `ionic-datepicker` bower component, which can be used in any Ionic fr
 
 1) In your project repository install the ionic-datepicker using bower
 
-`bower install ionic-datepicker --save`
+`bower install https://github.com/rconesasorolla/ionic-datepicker.git`
 
 This will install the latest version released.
 
@@ -56,6 +56,8 @@ angular.module('mainModuleName', ['ionic', 'ionic-datepicker']){
       modalFooterColor: 'bar-positive', //Optional
       from: new Date(2012, 8, 2),	//Optional
       to: new Date(2018, 8, 25),	//Optional
+      yearsAfer: 5,     //Optional
+      yearsBefore: 5,   //Optional
       callback: function (val) {	//Mandatory
         datePickerCallback(val);
       }
