@@ -18,22 +18,22 @@
   "license": "MIT",
   "homepage": "https://github.com/rajeshwarpatlolla",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "ionic": ">=0.9.27"
-  },
-  "_release": "0.9.1",
-  "_resolution": {
-    "type": "version",
-    "tag": "v0.9.1",
-    "commit": "771ae7e9f6fbf11c2167342f3dabcb838d159196"
-  },
-  "_source": "https://github.com/rconesasorolla/ionic-datepicker.git",
-  "_target": "~0.9.0",
-  "_originalSource": "ionic-datepicker"
+"**/.*",
+"node_modules",
+"bower_components",
+"test",
+"tests"
+],
+"dependencies": {
+"ionic": ">=0.9.27"
+},
+"_release": "0.9.1",
+"_resolution": {
+"type": "version",
+"tag": "v0.9.1",
+"commit": "3b36565994ba7158ee860940a8c20c7d3a5b9b62"
+},
+"_source": "https://github.com/rconesasorolla/ionic-datepicker.git",
+"_target": "~0.9.0",
+"_originalSource": "ionic-datepicker"
 }
